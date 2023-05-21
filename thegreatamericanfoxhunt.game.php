@@ -132,8 +132,7 @@ class TheGreatAmericanFoxHunt extends Table
 			switch ($state['name'])
 			{
 				default:
-					$this->
-					gamestate->nextState("zombiePass");
+					$this->gamestate->nextState("zombiePass");
 					break;
 			}
 			return;
