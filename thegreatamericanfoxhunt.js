@@ -39,7 +39,7 @@ define([
 				dojo.place(`<div class='TGAFH-Player' id='TGAFH_player_${player.id}' style='background-color:#${player.color};'><span id='TGAFH_hand_${player.id}' class='TGAFH-PlayerHand' title='${_('Hunters/dogs in hand')}'></span><span id='TGAFH_discard_${player.id}' class='TGAFH-PlayerDiscard' title='${_('Discarded hunters/dogs')}'></span></div>`, `player_board_${player.id}`);
 				let node = dojo.place(`<div class='TGAFH-Player' id='TGAFH_animals_${player.id}' style='background-color:#${player.color};'></div>`, `player_board_${player.id}`);
 				new dijit.Tooltip({
-					connectId: node, showDelay: DELAY, hideDelay: 0,
+					connectId: node, showDelay: DELAY, hideDelay: 0, position: this.defaultTooltipPosition,
 					getContent: (matchedNode) =>
 					{
 						let html = '<div class="TGAFH-Purchase">';
